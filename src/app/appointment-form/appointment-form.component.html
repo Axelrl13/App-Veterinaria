@@ -1,0 +1,16 @@
+<!-- appointment-form.component.html -->
+<form [formGroup]="appointmentForm" (submit)="agendarCita()">
+    <label for="paciente">Nombre del paciente:</label>
+    <input type="text" id="paciente" formControlName="paciente" required>
+  
+    <label for="fecha">Fecha de la cita:</label>
+    <input type="date" id="fecha" formControlName="fecha" required>
+  
+    <label for="motivo">Motivo de la cita:</label>
+    <textarea id="motivo" formControlName="motivo" required></textarea>
+  
+    <!-- Puedes agregar más campos según tus necesidades -->
+  
+    <button type="submit">Agendar Cita</button>
+  </form>
+  
